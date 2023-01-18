@@ -13,14 +13,16 @@ let messageTypes = [];
 let counters = [];
 
 for (let i = 0; i < bots.length; i++) {
-    if (messageTypes.indexOf(bots[i].bot.substring(0, 6)) < 0) {
-        messageTypes.push(bots[i].bot.substring(0, 6));
-        let counter = {name: bots[i].bot.substring(0, 6), times: 0};
+    let start = bots[i].bot.indexOf("/");
+    let end = bots[i].bot.lastIndexOf("#");
+    if (messageTypes.indexOf(bots[i].bot.substring(start, end)) < 0) {
+        messageTypes.push(bots[i].bot.substring(start, end));
+        let counter = {name: bots[i].bot.substring(start, end), times: 0};
         counters.push(counter);
-    } else {
-        counter = counters.find(counter => counter.name == bots[i].bot.substring(0, 6));
-        counter.times++;
     }
+
+    counter = counters.find(counter => counter.name == bots[i].bot.substring(start, end));
+    counter.times++;
 }
 
 console.log('Message types: ' + messageTypes);
@@ -41,6 +43,6 @@ for (let i = 0; i < dElements.length; i++) {
         foundStms.push(dElements[i].stm);
     }
 }
-
+console.log(foundTotals);
 console.log(foundStms);
 
