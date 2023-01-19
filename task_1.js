@@ -1,6 +1,5 @@
 const data = require("./test.json");
 
-// task 1
 // get messages for every element and create an array of them
 const getContents = (item) => {
     return item.content;
@@ -9,7 +8,7 @@ const getContents = (item) => {
 const contents = data.map(getContents); // the array of content objects
 const bots = contents.map(({ bot }) => ({ bot }));
 
-//create groups of messages with counter
+// task 1
 let messageTypes = [];
 let counters = [];
 
