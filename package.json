@@ -4,10 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "task_1": "nodemon task_1.js",
+    "task_2": "nodemon task_2.js",
+    "task_3": "nodemon task_3.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "George Zavlanis",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",

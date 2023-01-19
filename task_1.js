@@ -1,5 +1,6 @@
 const data = require("./test.json");
 
+// task 1
 // get messages for every element and create an array of them
 const getContents = (item) => {
     return item.content;
@@ -20,29 +21,10 @@ for (let i = 0; i < bots.length; i++) {
         let counter = {name: bots[i].bot.substring(start, end), times: 0};
         counters.push(counter);
     }
-
     counter = counters.find(counter => counter.name == bots[i].bot.substring(start, end));
     counter.times++;
 }
 
+// show results
 console.log('Message types: ' + messageTypes);
 console.log(counters);
-
-const getD = (item) => {
-    return item.content.d;
-};
-
-const dElements = data.map(getD); // all d elements
-
-let foundTotals = [];
-let foundStms = [];
-
-for (let i = 0; i < dElements.length; i++) {
-    if (JSON.stringify(foundTotals).indexOf(JSON.stringify(dElements[i].live.total)) < 0) {
-        foundTotals.push(dElements[i].live.total);
-        foundStms.push(dElements[i].stm);
-    }
-}
-console.log(foundTotals);
-console.log(foundStms);
-
