@@ -1,1 +1,18 @@
-[{"bot":"/vlData#1673936877359","whistle":"End of Period"},{"bot":"/vlData#1673936932828","whistle":"2 Points"},{"bot":"/vlData#1673936997041","whistle":"Free Throw Scored"},{"bot":"/vlData#1673937146900","whistle":"3 Points"}]
+[
+    {
+        "bot": "/vlData#1673936877359",
+        "whistle": "End of Period"
+    },
+    {
+        "bot": "/vlData#1673936932828",
+        "whistle": "2 Points"
+    },
+    {
+        "bot": "/vlData#1673936997041",
+        "whistle": "Free Throw Scored"
+    },
+    {
+        "bot": "/vlData#1673937146900",
+        "whistle": "3 Points"
+    }
+]

@@ -1,1 +1,14 @@
-[{"name":"bots","times":318},{"name":"vlData","times":197},{"name":"clockData","times":143}]
+[
+    {
+        "name": "bots",
+        "times": 318
+    },
+    {
+        "name": "vlData",
+        "times": 197
+    },
+    {
+        "name": "clockData",
+        "times": 143
+    }
+]
