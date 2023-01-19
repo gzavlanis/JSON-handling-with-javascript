@@ -1,4 +1,5 @@
 const data = require("./test.json");
+const fs = require('fs');
 
 // get messages for every element and create an array of them
 const getContents = (item) => {
@@ -23,3 +24,7 @@ for (let i = 0; i < contents.length; i++) {
 
 // show results
 console.log(foundStms);
+
+// write results in json file
+// let json = JSON.stringify(foundStms);
+// fs.writeFile("task2.json", json, (err) => err && console.log(err));
