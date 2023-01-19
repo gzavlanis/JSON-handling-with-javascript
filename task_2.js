@@ -11,6 +11,7 @@ const contents = data.map(getContents); // the array of content objects
 // task 2
 let foundStms = [];
 let foundTotals = [];
+
 for (let i = 0; i < contents.length; i++) {
     let start = contents[i].bot.indexOf("/");
     let end = contents[i].bot.lastIndexOf("#");
