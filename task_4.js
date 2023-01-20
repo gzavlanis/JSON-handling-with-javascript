@@ -1,12 +1,11 @@
 const data = require("./test.json");
-const fs = require('fs');
 
-const getDMarkets = (item) => {
+const getMarkets = (item) => {
     return item.content.d.new_markets;
 };
 
 // task 4
-const markets = data.map(getDMarkets);
+const markets = data.map(getMarkets);
 
 let names = [];
 for (i = 0; i < markets.length; i++) {
@@ -20,10 +19,6 @@ for (i = 0; i < markets.length; i++) {
 // remove repetitions
 const marketNames = names.filter((name, index) => names.indexOf(name) === index);
 
-// sort the array
+// sort the array and show results
 marketNames.sort();
 console.log(marketNames);
-
-// write results in json file
-//let json = JSON.stringify(definedMarkets);
-//fs.writeFile("task4_test.json", json, (err) => err && console.log(err));
