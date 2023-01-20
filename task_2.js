@@ -1,6 +1,5 @@
 const data = require("./test.json");
 const fs = require('fs');
-const ld = require('lodash');
 
 // get messages for every element and create an array of them
 const getContents = (item) => {
