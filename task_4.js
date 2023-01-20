@@ -9,7 +9,7 @@ const markets = data.map(getMarkets);
 
 let names = [];
 for (i = 0; i < markets.length; i++) {
-    if (JSON.stringify(markets[i]) !== '{}') { // if is not empty
+    if (JSON.stringify(markets[i]) !== '{}') { // check if empty
         for ([market] of Object.entries(markets[i])) {
             names.push(market);
         }
