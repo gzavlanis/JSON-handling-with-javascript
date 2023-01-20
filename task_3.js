@@ -27,6 +27,7 @@ for (let i = 0; i  < contents.length; i++) {
 
 // show results
 console.log(vlData);
+console.log(whistles);
 
 // write results in json file
 // let json = JSON.stringify(vlData);
