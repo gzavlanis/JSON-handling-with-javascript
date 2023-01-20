@@ -1,7 +1,6 @@
 const data = require("./test.json");
 const fs = require('fs');
 
-// get messages for every element and create an array of them
 const getContents = (item) => {
     return item.content;
 };
