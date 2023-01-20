@@ -6,7 +6,8 @@
   "scripts": {
     "task_1": "nodemon task_1.js",
     "task_2": "nodemon task_2.js",
-    "task_3": "nodemon task_3.js"
+    "task_3": "nodemon task_3.js",
+    "task_4": "nodemon task_4.js"
   },
   "keywords": [],
   "author": "George Zavlanis",
